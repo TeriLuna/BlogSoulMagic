@@ -2,14 +2,15 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: [
-    './public/index.html',
-    './src/**/*.{html,js}',
+    "./public/index.html",
+    "./src/**/*.{html,js,jsx}",
+    "./components/**/*.{html, js,jsx}"
   ],
   theme: {
     colors: {
       blue: "#1fb6ff",
       purple: "#7e5bef",
-      pink: "#ff49db",
+      pink: "#f9db",
       orange: "#ff7849",
       green: "#13ce66",
       yellow: "#ffc82c",
@@ -24,9 +25,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio'),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
   ],
 };
